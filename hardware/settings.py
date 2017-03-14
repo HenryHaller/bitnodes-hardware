@@ -244,10 +244,8 @@ BITCOIN_CLI = os.path.expanduser('~/bin/bitcoin-cli')
 if not os.path.isfile(BITCOIN_CLI):
     BITCOIN_CLI = None
 
-BITCOIN_DIR = os.path.join(BASE_DIR, '.bitcoin')
-SDCARD_DIR = '/media/data'
-if os.path.exists(SDCARD_DIR):
-    BITCOIN_DIR = os.path.join(SDCARD_DIR, '.bitcoin')
+SDCARD_DIR = '/media/Blockstore/'
+BITCOIN_DIR = os.path.join(SDCARD_DIR, '.bitcoin')
 
 # Execute the following command to create a new bitcoin.conf:
 # ./manage.py create_bitcoin_conf

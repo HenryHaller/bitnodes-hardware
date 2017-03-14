@@ -98,7 +98,7 @@ pip install --upgrade -r requirements.txt -e .
 rm -vf .bitcoin/bitcoin.conf
 if [ ${debug} -eq 0 ]
 then
-    rm -vf /media/data/.bitcoin/bitcoin.conf
+    rm -vf /media/Blockstore/.bitcoin/bitcoin.conf
 fi
 ./manage.py create_bitcoin_conf
 
